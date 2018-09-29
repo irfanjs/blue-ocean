@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+  <body>
+
+ <!-- <style>
+  div.row1 {
+      position: relative;
+      left: 900px;
+      marginTop="200px"
+
+  }
+  </style> -->
+
+
+    <h2 th:text="#{welcome}">Welcome</h2>
+    <div class="row">
+        <div class="col-md-12">
+          <img class="img-responsive" src="../static/resources/images/pets.png" th:src="@{/resources/images/pets.png}"/>
+        </div>
+    </div>
+
+    <!-- <div class="row1">
+	        <div class="col-md-121">
+	          <img class="img-responsive1" src="../static/resources/images/infosys.png" th:src="@{/resources/images/infosys.png}"/>
+	        </div>
+    </div> -->
+
+  </body>
+
+</html>
